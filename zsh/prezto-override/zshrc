@@ -1,3 +1,27 @@
 source $HOME/.zprezto/runcoms/zshrc
 
 for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file
+
+export FBSOURCE=/Users/ssjia/fbsource
+source $FBSOURCE/xplat/caffe2/fb/vulkan/tools/actions/main_actions.sh
+
+export ANDROID_NDK=/opt/android_sdk/ndk/21.1.6352462/
+
+# Xplat
+export caffe2_xplat=$HOME/fbsource/xplat/caffe2
+## vulkan
+export vk_xplat_dir=$caffe2_xplat/aten/src/ATen/native/vulkan
+## metal
+export metal_xplat_dir=$caffe2_xplat/aten/src/ATen/native/metal
+## coreml
+export coreml_xplat_dir=$caffe2_xplat/torch/csrc/jit/backends/coreml
+export coreml_customops_dir=$caffe2_xplat/fb/coreml
+## dynamic pytorch
+export dyn_shim_dir=$caffe2_xplat/fb/dynamic_pytorch
+
+# OSS
+export pytorch_oss=$HOME/Github/pytorch
+## vulkan
+export vk_oss_dir=$pytorch_oss/aten/src/ATen/native/vulkan
+## coreml
+export coreml_oss_dir=$pytorch_oss/torch/csrc/jit/backends/coreml
