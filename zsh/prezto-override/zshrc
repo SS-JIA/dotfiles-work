@@ -2,7 +2,7 @@ source $HOME/.zprezto/runcoms/zshrc
 
 for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file
 
-export FBSOURCE=/Users/ssjia/fbsource
+export FBSOURCE=$HOME/fbsource
 source $FBSOURCE/xplat/caffe2/fb/vulkan/tools/actions/main_actions.sh
 
 export ANDROID_NDK=/opt/android_sdk/ndk/21.1.6352462/
