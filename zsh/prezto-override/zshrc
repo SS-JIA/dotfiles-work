@@ -25,3 +25,5 @@ export pytorch_oss=$HOME/Github/pytorch
 export vk_oss_dir=$pytorch_oss/aten/src/ATen/native/vulkan
 ## coreml
 export coreml_oss_dir=$pytorch_oss/torch/csrc/jit/backends/coreml
+
+export PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
